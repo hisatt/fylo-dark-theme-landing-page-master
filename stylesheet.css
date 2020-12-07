@@ -1,3 +1,64 @@
-body{
-  background-color: red;
+:root {
+  --dark-blue-intro-sign: hsl(217, 28%, 15%);
+  --dark-blue-bg: hsl(218, 28%, 13%);
+  --dark-blue-footer-bg: hsl(216, 53%, 9%);
+  --dark-blue-testi-bg: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --white-transparent: hsl(0, 0%, 100%, 0.7);
 }
+
+@font-face {
+  font-family: Raleway;
+  src: url(./fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+/* Start Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+  font-family: OpenSans;
+  font-weight: 400;
+  background-color: var(--dark-blue-bg);
+  color: var(--white);
+}
+
+img {
+  width: 100%;
+}
+
+a,
+p {
+  color: var(--white-transparent);
+  text-decoration: none;
+}
+
+nav .container ul li a {
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+/* End Global Style */
